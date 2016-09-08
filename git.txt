@@ -1,0 +1,39 @@
+1.init(create) a reposibility.
+>cd your_dictionary
+>git init
+
+2.add file to repo.
+>git add [files]
+
+3.connect to the remote repo.
+>git remote add origin [the path of .git]
+
+4.set your global config of git.
+>git config --global user.email sample@gmail.com'
+>git config --global user.name "yourname"
+
+5.create a commit
+>git commit -m "your decription of this commit."
+
+6.push your commit to remote repo
+>git push origin master
+
+7.view the commit log
+>git log
+
+8.return to the last version or more or specified version
+>git reset --hard HEAD^
+>git reset --hard HEAD^^
+>git reset --hard HEAD~56
+
+>git reset --hard b0794dd
+//or
+>git reset --hard b079
+
+9.view the disappearence version
+>git reflog
+
+10.view the current status
+>git status
+
+11.
