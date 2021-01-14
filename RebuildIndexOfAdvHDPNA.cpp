@@ -1,4 +1,4 @@
-#include <fstream>
+#include <fstream> 
 #include <iostream>
 #include <string>
 #include <filesystem>
@@ -10,8 +10,8 @@ union binary_size {
 
 using stdstr = std::string;
 using fileway = std::ios_base;
-namespace fs = std::experimental::filesystem;
-using fpath = std::experimental::filesystem::v1::path;
+namespace fs = std::filesystem;
+using fpath = std::filesystem::path;
 
 void RebuildIndex(stdstr newfolder, fpath subfolder);
 int readsize(char* buffer, unsigned int pos);
@@ -101,7 +101,6 @@ void writesize(char* buffer, unsigned int pos, int size)
 
 int pnapack(stdstr newFolder)
 {
-    char str[100];
     stdstr temp("ahdprc pna -r ");
     for (auto& p : fs::recursive_directory_iterator(newFolder))
         if (fs::is_directory(p))
